@@ -10,8 +10,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <main>
-        @yield('content')
+    <header>
+        @component('component_navbar')
+        @endcomponent
+    </header>
+    <main role="main" class="container mt-3">
+        @hasSection('body')
+            @yield('body')
+        @endif
     </main>
 </body>
     <script src="{{ asset('site/bootstrap.js') }}" />
