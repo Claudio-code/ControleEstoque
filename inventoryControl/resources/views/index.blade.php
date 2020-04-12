@@ -1,4 +1,4 @@
-@extends('layoutDefault')
+@extends('layoutDefault', ['current' => 'home'])
 
 @section('body')
     <div class="d-flex flex-row justify-content-around">

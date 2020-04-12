@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        @component('component_navbar')
+        @component('component_navbar', ['current' => $current])
         @endcomponent
     </header>
     <main role="main" class="container mt-3">
