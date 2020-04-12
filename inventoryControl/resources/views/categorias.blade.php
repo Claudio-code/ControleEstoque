@@ -1,3 +1,4 @@
+
 @extends('layoutDefault', ['current' => 'categorias'])
 
 @section('body')
