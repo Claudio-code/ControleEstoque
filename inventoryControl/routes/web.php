@@ -22,3 +22,4 @@ Route::get('/produtos', 'ProdutosController@index');
 Route::get('/categorias', 'CategoriasController@index');
 Route::get('/categorias/novo', 'CategoriasController@create');
 Route::post('/categorias', 'CategoriasController@store');
+Route::get('/categorias/deletar/{id}', 'CategoriasController@destroy');

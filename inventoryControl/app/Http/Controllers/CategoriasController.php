@@ -20,6 +20,8 @@ class CategoriasController extends Controller
         $categoria = new Categoria();
         $categoria->name = $request->input('name');
         $categoria->save();
+
+        return $this->index();
     }
 
     /**
@@ -64,6 +66,7 @@ class CategoriasController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Categoria::destroy($id);
+        return redirect('/categorias');
     }
 }
